@@ -78,24 +78,6 @@ const createNewFinanceAccount = async (req, res, next) => {
 
   const { name, category, balance, user } = req.body;
 
-  // Need to change this part to check for accounts by the same user
-  // rather than whole database.
-  // let existingAccount;
-  // try {
-  //   existingAccount = await Account.findOne({ name: name });
-  // } catch (err) {
-  //   const error = new HttpError("Could not create the account", 500);
-  //   return next(error);
-  // }
-
-  // if (existingAccount) {
-  //   const error = new HttpError(
-  //     "Account exists with this name already, please choose another name",
-  //     422
-  //   );
-  //   return next(error);
-  // }
-
   const createdAccount = new Account({
     id: uuidv4(),
     user,
