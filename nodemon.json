@@ -1,8 +1,0 @@
-{
-    "env": {
-        "DB_USER":"adam",
-        "DB_PASSWORD":"Simplicity29",
-        "DB_NAME":"users",
-        "JWT_KEY":"chernobyl"
-    }
-}
